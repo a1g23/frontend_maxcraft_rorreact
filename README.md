@@ -9,7 +9,6 @@ Deployed Link: https://maxraftv2.netlify.app/
 ## List of Dependencies
 
 - React
-- VITE
 - React Router
 
 
