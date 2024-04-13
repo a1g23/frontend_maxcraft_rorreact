@@ -4,7 +4,7 @@
 
 **The Maxcraft App will at first become a product catolog for current clients. The application will evolve over time into a e-commerce site where approved customers will sign in, own an account and be able to place orders directly on the app for streamlined service.**
 
-Deployed Link: 
+Deployed Link: https://maxraftv2.netlify.app/
 
 ## List of Dependencies
 
