@@ -1,6 +1,10 @@
+import { useLoaderData } from "react-router-dom"
+
 const ShowOne = (props) => {
+    const product = useLoaderData()
     return (
-        <h1>I'm the Showone and I'll show one</h1>
+        
+        <h1>{product.name}</h1>
     )
 }
 

@@ -1,7 +1,14 @@
+import { useLoaderData } from "react-router-dom"
+
 const ShowAll = (props) => {
-    return (
-        <h1>I'm the Index and I'll have all data</h1>
-    )
+    const products = useLoaderData()
+    console.log(products)
+    products.map(el => {
+        return (
+            <h1>{el.name}</h1>
+        )
+    })
+    
 }
 
 export default ShowAll
