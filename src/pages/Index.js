@@ -1,14 +1,30 @@
-import { useLoaderData } from "react-router-dom"
+import { Link, useLoaderData } from "react-router-dom"
 
-const ShowAll = (props) => {
+const Index = (props) => {
     const products = useLoaderData()
-    console.log(products)
-    products.map(el => {
-        return (
-            <h1>{el.name}</h1>
-        )
-    })
+    
+    return (
+        <div>
+            <div className="header-container">
+                <h1>all products..</h1>
+                
+            </div>
+            <div className="container">
+                {products.map(v => {
+                    return (
+                        <div key={v._id} className="product">
+                            
+                                <h4>{v.name}</h4>
+                                <img src={v.image} width="300" ></img>
+                            
+                        </div>            
+                    )
+                })}
+            </div>
+            
+        </div>
+    )
     
 }
 
-export default ShowAll
+export default Index
