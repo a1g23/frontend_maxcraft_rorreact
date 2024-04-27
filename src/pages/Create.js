@@ -1,6 +1,20 @@
+import { Form } from "react-router-dom"
+
 const Create = (props) => {
     return (
-        <h1>I'm the Create and I'll be a form</h1>
+        <div>
+            
+            <h1>add a new product..</h1>
+            <Form action={`/create/`} method="POST">
+                    <input type="text" id="name" name="name" placeholder="name"/>
+                    <input type="text" id="image" name="image" placeholder="image"/>
+                    <input type="text" id="size" name="size" placeholder="size"/>
+                    <input type="number" id="price" name="price" placeholder="price"/>
+                    <button>Add to Inventory</button>
+            </Form>
+            
+
+        </div>
     )
 }
 

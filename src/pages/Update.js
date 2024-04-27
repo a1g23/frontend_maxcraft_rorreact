@@ -1,6 +1,25 @@
+import { Form, useLoaderData } from 'react-router-dom'
+
 const Update = (props) => {
-    return (
-        <h1>I'm the Update and I'll be a form to update</h1>
+    const product = useLoaderData()
+    console.log(product)
+
+    return(
+        <div>
+            
+            <h1>Update {product.name}..</h1>
+            
+            <Form action={`/update/${product.id}/`} method="POST">
+                <input type="text" id="name" name="name" defaultValue={product.name}/>
+                <input type="text" id="image" name="image" defaultValue={product.image}/>
+                <input type="text" id="size" name="size" defaultValue={product.size}/>
+                <input type="number" id="price" name="price" defaultValue={product.price}/>
+                <button>Update</button>
+            </Form>
+            
+        </div>
+        
+
     )
 }
 
