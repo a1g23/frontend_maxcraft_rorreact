@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom"
+import { Form, Link, useLoaderData } from "react-router-dom"
 
 const ShowOne = (props) => {
     const product = useLoaderData()
@@ -13,7 +13,15 @@ const ShowOne = (props) => {
                 <h4>Size: {product.size} // </h4>
                 <h4>Price: ${product.price}</h4>
             </div>
-
+            <div className="container">
+                <Form action={`/delete/${product.id}/`} method="POST">
+                    <button>Delete</button>
+                </Form>
+                
+                <Link to={`/${product.id}/update`}>
+                    <button>Update</button>
+                </Link>
+            </div>
         </div>
         
     )

@@ -12,7 +12,7 @@ export const createAction = async({request}) => {
 
     // construct request body
     const newProduct = {
-        type: formData.get("name"),
+        name: formData.get("name"),
         image: formData.get("image"),
         size: formData.get("size"),
         price: formData.get("price")
@@ -40,7 +40,7 @@ export const updateAction = async({request, params}) => {
     const id = params.id
     // construst new pet
     const updatedProduct = {
-        type: formData.get("name"),
+        name: formData.get("name"),
         image: formData.get("image"),
         size: formData.get("size"),
         price: formData.get("price")
