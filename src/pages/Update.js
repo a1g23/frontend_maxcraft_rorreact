@@ -1,4 +1,6 @@
 import { Form, useLoaderData } from 'react-router-dom'
+import Header from "../components/Header"
+import Footer from '../components/Footer'
 
 const Update = (props) => {
     const product = useLoaderData()
@@ -6,7 +8,7 @@ const Update = (props) => {
 
     return(
         <div>
-            
+            <Header />
             <h1>Update {product.name}..</h1>
             
             <Form action={`/update/${product.id}/`} method="POST">
@@ -16,6 +18,7 @@ const Update = (props) => {
                 <input type="number" id="price" name="price" defaultValue={product.price}/>
                 <button>Update</button>
             </Form>
+            <Footer />
             
         </div>
         

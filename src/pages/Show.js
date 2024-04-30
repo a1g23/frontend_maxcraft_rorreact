@@ -1,12 +1,12 @@
 import { Form, Link, useLoaderData } from "react-router-dom"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const ShowOne = (props) => {
     const product = useLoaderData()
     return (
         <div>
-            <div className="header-container">
-                
-            </div>
+            <Header />
             <h4>{product.name}</h4>
             <img src={product.image} width={300} alt="product image"></img>
             <div className="container">
@@ -22,6 +22,7 @@ const ShowOne = (props) => {
                     <button>Update</button>
                 </Link>
             </div>
+            <Footer />
         </div>
         
     )

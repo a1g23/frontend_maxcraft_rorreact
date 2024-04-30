@@ -1,10 +1,13 @@
 import { Link, useLoaderData } from "react-router-dom"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const Index = (props) => {
     const products = useLoaderData()
     
     return (
         <div>
+            <Header />
             <div className="header-container">
                 <h1>all products..</h1>
                 
@@ -21,7 +24,7 @@ const Index = (props) => {
                     )
                 })}
             </div>
-            
+            <Footer />
         </div>
     )
     
