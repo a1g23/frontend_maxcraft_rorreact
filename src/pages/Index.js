@@ -8,19 +8,19 @@ const Index = (props) => {
     return (
         <div>
             <Header />
-            <div className="header-container">
+            
                 <h1>all products..</h1>
                 
-            </div>
+            
             <div className="container">
                 {products.map(v => {
                     return (
-                        <div key={v._id} className="product">
-                            <Link to={`${v.id}`}>
-                                <h4>{v.name}</h4>
-                                <img src={v.image} width="300" ></img>
-                            </Link>
-                        </div>            
+                        <Link to={`${v.id}`}>
+                            <div key={v._id} className="product">
+                                <h4 className="product-item product-name">{v.name}</h4>
+                                <img className="product-item product-name" src={v.image} width="250" ></img>
+                            </div>  
+                        </ Link>          
                     )
                 })}
             </div>
