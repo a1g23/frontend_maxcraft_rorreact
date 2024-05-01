@@ -11,7 +11,7 @@ const Update = (props) => {
             <Header />
             <h1>Update {product.name}..</h1>
             
-            <Form action={`/update/${product.id}/`} method="POST">
+            <Form className="create-form" action={`/update/${product.id}/`} method="POST">
                 <input type="text" id="name" name="name" defaultValue={product.name}/>
                 <input type="text" id="image" name="image" defaultValue={product.image}/>
                 <input type="text" id="size" name="size" defaultValue={product.size}/>

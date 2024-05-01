@@ -7,7 +7,7 @@ const Create = (props) => {
         <div>
             <Header />
             <h1>add a new product..</h1>
-            <Form action={`create`} method="POST">
+            <Form className="create-form" action={`create`} method="POST">
                     <input type="text" id="name" name="name" placeholder="name"/>
                     <input type="text" id="image" name="image" placeholder="image"/>
                     <input type="text" id="size" name="size" placeholder="size"/>

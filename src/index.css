@@ -1,3 +1,27 @@
+/* APPLY ALL */
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+
+button {
+    background-color: rgb(214, 233, 187);
+    border: none;
+    border-radius: 1vh;
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
 /* FOOTER */
 
 .footer {
@@ -11,7 +35,40 @@
 
 /* HEADER */
 
+.hamburger-svg {
+    position: fixed;
+    right: 3vh;
+    top: 2vh;
+}
+
+.hamburger-svg:hover {
+    cursor: pointer;
+}
+
+.hamburger-container {
+    position: fixed;
+    right: 3vh;
+    top: 2vh;
+}
+
+.hamburger-item {
+    margin: 1px;
+}
+
 /* CREATE */
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    width: 45vw;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px 10px grey;
+    padding: 4vh;
+}
+
 
 /* INDEX */
 
