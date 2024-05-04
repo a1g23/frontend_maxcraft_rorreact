@@ -100,4 +100,15 @@ img {
 
 /* SHOW */
 
+.show-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+}
 
+ .button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    gap: 1vh;
+ }

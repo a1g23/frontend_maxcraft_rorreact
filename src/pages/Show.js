@@ -7,13 +7,15 @@ const ShowOne = (props) => {
     return (
         <div>
             <Header />
-            <h4>{product.name}</h4>
-            <img src={product.image} width={300} alt="product image"></img>
-            <div className="container">
-                <h4>Size: {product.size} // </h4>
-                <h4>Price: ${product.price}</h4>
+            <h1>{product.name}</h1>
+            <div className="show-container">
+                <img src={product.image} width={400} alt="product image"></img>
+                <div className="specs-container">
+                    <h4>Size: {product.size}</h4>
+                    <h4>Price: ${product.price}</h4>
+                </div>
             </div>
-            <div className="container">
+            <div className="button-container">
                 <Form action={`/delete/${product.id}/`} method="POST">
                     <button>Delete</button>
                 </Form>
