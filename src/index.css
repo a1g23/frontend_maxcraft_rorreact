@@ -58,6 +58,12 @@ button:hover {
     margin: 1px;
 }
 
+.title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
 /* CREATE and UPDATE */
 
 .create-form {
